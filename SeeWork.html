@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+
+    <script src="jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="bootstrapjs.js"></script>
+
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="Styles.css">
+    <link href="Bootstrap.css" rel="stylesheet" >
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+
+    <!-- header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="HomePage.html" style="margin-left: 1rem">
+          <img src="images/Logo2.png" width="400" d-inline-block align-top/></a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="SeeWork.html">Gallery</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutCirel.html">About Cirel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <!-- End header-->
+
+
+      <script>
+      $( function() {
+        $( "#dialog" ).dialog({modal: true});
+      } );
+      </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#gallery").load("Gallery.html");
+        });
+    </script>
+
+    <div id="dialog" title="Notice">
+      <p>All of Cirel's art is original.
+      It is against the law to copy or forge any of her work.</p>
+    </div>
+
+    <div id="gallery">
+    </div>
+
+    <!-- footer-->
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <a class="navbar-text footer">&copy;Cirel Jacobs</a>
+    </nav>
+    <!-- end footer-->
+
+</body>
+</html>

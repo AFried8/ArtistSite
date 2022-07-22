@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Cirel</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="AboutCirel.css">
+    <link rel="stylesheet" href="Bootstrap.css">
+    <link rel="stylesheet" href="Styles.css">
+
+    <script>
+    	$(document).ready(function(){
+			$("#accordion").accordion({
+				event: "click",
+        		heightStyle: "content",
+        		collapsible: true
+			});
+		});
+	</script>
+
+
+</head>
+<body>
+
+    <!-- header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="HomePage.html" style="margin-left: 1rem">
+           <img src="images/Logo2.png" width="400" d-inline-block align-top/></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="SeeWork.html">Gallery</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutCirel.html">About Cirel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <!-- End header-->
+
+    <div class="row d-flex justify-content-center text-center" id="content">
+        <div class="col-8">
+            <h1>Questions for Cirel</h1>
+            <div id="accordion">
+                <h3 class="question accent">When did you start painting?</h3>
+                <div>
+                    <p>I've been doodling with my pen or pencil for as long as I can remember
+                        but my formal painting education began when I was nine, and I haven't
+                        stopped since
+                    </p>
+                </div>
+                <h3 class="question accent">Which is your favorite painting?</h3>
+                <div>
+                    <p>That's a hard question! I do enjoy painting scenes from Yerushalayim</p>
+                </div>
+                <h3 class="question accent">Do you ever get artist's block?</h3>
+                <div>
+                    <p>It's usually not too bad, but if I do, I'll often take a walk
+                        and ideas will come to me then
+                    </p>
+                </div>
+            </div><br><br>
+            <div class="buy">
+                <a href="Buy%20Siddur.html"><button class="btn btn-primary accent">Buy Cirel's painted siddur</button></a>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card" style="width: 20rem; margin: 2rem">
+              <img class="card-img-top" src="images/artist.jpeg" alt="artist photo">
+                  <div class="card-body">
+                    <h5 class="card-title">Cirel Jacobs</h5>
+                    <p class="card-text">Cirel Jacobs is an inspired artist living in New York.
+                        Her artwork is displayed in several galleries across the city</p>
+                    <a href="ContactUs.html"><button class="btn btn-primary accent">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer-->
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <a class="navbar-text footer">&copy;Cirel Jacobs</a>
+    </nav>
+    <!-- end footer-->
+</body>
+</html>

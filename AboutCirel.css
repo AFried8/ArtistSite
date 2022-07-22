@@ -1,0 +1,20 @@
+#content, .col-8{
+    padding: 2rem;
+}
+
+#accordion{
+    padding: 1rem;
+
+}
+.question{
+    font-size: xx-large;
+    padding: .5rem;
+}
+
+p{
+    font-size: x-large;
+}
+
+.card, .col-8{
+    border-color: black;
+}

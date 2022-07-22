@@ -1,0 +1,21 @@
+.nav-link:hover{
+    background-color: #a8424b;
+}
+
+.accent{
+    background-color: #6a1a21;
+    color: white;
+    font-size: large;
+}
+
+.accent::selection, .accent:hover{
+    background-color: #084298;
+}
+
+.footer{
+    padding-left: 45%;
+}
+
+.navbar a{
+    font-size: x-large;
+}

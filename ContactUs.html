@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="ContactUs.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="stylesheet" href="Bootstrap.css">
+    <link rel="stylesheet" href="Styles.css">
+    <script>
+        $(document).ready(function(){
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.html" style="margin-left: 1rem">
+           <img src="images/Logo2.png" width="400" d-inline-block align-top/></a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="SeeWork.html">Gallery</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutCirel.html">About Cirel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <!-- End header-->
+
+    <form action="ProcessContact.html" method="get" name="contact_form" id="contact_form" class="contact_form">
+        <!--<div class="form-group">-->
+            <label for="name">Name: </label><br>
+            <input type="text" id="name" class="form-control" name="name"><span></span><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="text" id="email" class="form-control" name="email"><span></span><br><br>
+            <label for="number">Number: </label><br>
+            <input type="text" id="number" class="form-control" name="number"><span></span><br><br>
+            <label for="datepicker">Birthday: </label><br>
+            <input type="text" id="datepicker" name="birthday"><br><br>
+            <label for="content">Message</label><br>
+            <textarea id="content" class="form-control" name="content"></textarea><br>
+            <br><br>
+
+	        <input type="submit" id="contact" class="btn btn-primary accent" name="contact" value="Contact">
+        <!--</div>-->
+    </form>
+
+    <!-- footer-->
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <a class="navbar-text footer">&copy;Cirel Jacobs</a>
+    </nav>
+    <!-- end footer-->
+
+</body>
